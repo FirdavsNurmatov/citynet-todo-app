@@ -1,8 +1,15 @@
-import { Outlet } from "react-router-dom"
+import Dashboard from "../pages/dashboard"
 
 const MainLayout = () => {
     return (
-        <main><Outlet /></main>
+        <>
+            <div>
+
+                <header></header>
+                <main><Dashboard /></main>
+            </div>
+            <footer></footer>
+        </>
     )
 }
 
