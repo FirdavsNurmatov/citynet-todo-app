@@ -3,7 +3,7 @@ import img from "../assets/image.png"
 
 const Dashboard = () => {
     return (
-        <div className="bg-[black] h-vh p-[20px] grid grid-cols-3 gap-[10px]">
+        <div className="bg-[black] h-dvh p-[20px] grid grid-cols-3 items-center gap-[10px]">
             <UserCard image={img} fullname="A.Abrorbek" role="Project manager" todoQuantity={30} />
             <UserCard image={img} fullname="A.Abrorbek" role="Project manager" todoQuantity={30} />
             <UserCard image={img} fullname="A.Abrorbek" role="Project manager" todoQuantity={30} />
