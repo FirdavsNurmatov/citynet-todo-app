@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import "tailwindcss";
-
-@theme {
-    --font-family: "Montserrat", "sans-serif";
-    --second-family: "Poppins", "sans-serif";
-    --font3: "Inter", "sans-serif";
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -16,4 +10,108 @@
     max-width: 1240px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.user_card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 609px;
+    max-height: 301px;
+    border-radius: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #1c1c1e;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #777777;
+}
+
+.user_card__block {
+    display: flex;
+    gap: 30px;
+}
+
+.img {
+    border-radius: 12px;
+    width: 147px;
+    height: 100px;
+}
+
+.user_card__fullname {
+    color: white;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user_card__role {
+    color: #bbb;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user_card__block2 {
+    display: flex;
+    gap: 15px;
+}
+
+.todo_quantity {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    text-align: center;
+    color: #000000;
+}
+
+.blue_card {
+    background-color: #b0d6ff;
+    border-radius: 1rem;
+    padding-top: 15px;
+    width: 131px;
+    height: 98px;
+}
+
+
+.yellow_card {
+    background-color: #fdbf01;
+    border-radius: 16px;
+    padding-top: 15px;
+    width: 131px;
+    height: 98px;
+}
+
+
+.green_card {
+    background-color: #9ad573;
+    border-radius: 16px;
+    padding-top: 15px;
+    width: 131px;
+    height: 98px;
+}
+
+
+.red_card {
+    background-color: #ff4646;
+    border-radius: 16px;
+    padding-top: 15px;
+    width: 131px;
+    height: 98px;
+}
+
+.dashboard {
+    background-color: black;
+    height: 100dvh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10px;
 }
